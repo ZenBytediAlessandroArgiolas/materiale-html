@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compito in classe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <!--Elemento logo con azione-->
+        <div id="logo">
+            <a href="" alt="" title="">
+                <img src="" title="" alt=""/>
+            </a>
+        </div>
+        <!--Menu di navigazione orizzontale-->
+        <nav>
+            <ul>
+                <li><a href="#" alt="" title="">Home</a></li>
+                <li><a href="#" alt="" title="">page 1</a></li>
+                <li><a href="#" alt="" title="">page 2</a></li>
+                <li><a href="#" alt="" title="">page 3</a></li>
+                <li><a href="#" alt="" title="">page 4</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="hero">
+
+    </section>
+    <section id="menu_center">
+
+    </section>
+    <main>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
