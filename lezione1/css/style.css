@@ -1,1 +1,121 @@
 
+/*stlte css*/
+/*Reset*/
+*{
+    margin:0;
+    padding:0;
+}
+
+/* misure
+vh e vw in base alla viewport
+  % 
+  
+  background
+  
+  #ffffff
+  rgb(255,255,255)
+  rgba(255,255,255,0.5)
+  */
+header{
+    width: 100vw;
+    background: #ff0000;
+}
+
+/*menu orizontale nav*/
+nav{
+    background: #333;
+    padding: 10px 0;
+}
+
+/*ul lista disposta orizontalmente*/
+nav ul{
+    list-style:none;
+    display: flex; /*attivando il flex display*/
+    justify-content: center;
+    gap: 30px;
+}
+
+nav ul li{}
+
+nav ul li a{
+    display: block;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover{
+    background: #555;
+    border-radius:5px;
+}
+
+/*footer deve essere largo quanto lo schermo e alto almeno 60px colore a scelta vostra
+main deve essere altro almento 90vh e largo quando lo schermo colore a scelta*/
+main{
+    width: 100vw;
+    height: 90vh;
+    background: #0000ff;
+}
+
+.flex-main{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+}
+
+.item-flex-main{
+   
+}
+
+#content{
+    /*float: left;*/
+    width:70vw;
+    height:100%;
+    background: #fff;
+    flex-grow: 1;
+}
+
+.flex-content{
+    display: flex; /* attiva il flex display*/
+    flex-wrap: wrap; /*permetti di andare a capo*/
+    justify-content: space-between; /*disposni i contentuti occupando tutto lo spazio*/
+    align-items: center; /*dichiaro di alineare al centro verticalmente gli elementi su item*/
+    gap: 20px;                  /* Spazio tra gli elementi */
+    padding: 20px;
+}
+
+.item {
+  background-color: #4a90e2;
+  color: white;
+  padding: 20px;
+  flex:1 0 200px; /*ongi item occupa spazio uguale*/en
+  /*
+    flex-grow: 1; -> permetti che l'elemento diventi grande
+    flex-shrink: 0; -> non permettere che l'elementi diventi piu piccolo
+    flex-basis: 200px; -> l'elementid eve essere grande di base 200px
+  */
+  text-align: center;
+  border-radius: 11px; /*mi permette di smussare gli angoli*/
+}
+
+#sidebar{
+    /*float: right;*/
+    width: 30vw;
+    min-width:300px;
+    height: 100%;
+    background: #00ff00;
+}
+
+
+
+footer{
+    width: 100vw;
+    height: 60px;
+    background: #ff0000;
+}
+
+/* 
+    id selettore univoco 
+    classi selettore multiplo 
+*/
