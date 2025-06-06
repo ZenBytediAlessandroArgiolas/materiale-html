@@ -1,0 +1,125 @@
+/*style esercizio*/
+*{
+    margin: 0;
+    padding:0;
+}
+header,main,footer{
+    width: 100vw;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    height: 60px;
+    padding: 5px 0px;
+    background:#cbcbcb;
+}
+
+#logo_nav{
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    margin-left:50px
+}
+
+#logo_nav img{
+    width: 100%;
+    height: 100%;
+}
+
+/*menu orizzontale*/
+nav ul{
+    list-style:none;
+    display: flex; /*attivando il flex display*/
+    margin-right: 50px;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+nav ul li{}
+
+nav ul li a{
+    display: block;
+    padding: 10px 20px;
+    color: #fff;
+    background:#6c6c6c;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+nav ul li a:hover{
+    background: #555;
+    border-radius:5px;
+}
+/*codice del main*/
+main {
+    background: #fb9b9b;
+    display: flex;
+    flex-wrap: nowrap; /* default layout: horizontal */
+    flex-direction: row;
+}
+
+#sidebar {
+    width: 20vw;
+    min-width: 300px;
+    height: 100vh;
+    padding: 10px;
+    background: #f5f5f5;
+    flex-shrink: 0;
+}
+
+#sidebar_top{
+    width: 100%;
+    /*height: 30px;*/
+    background: #fff;
+}
+/*bt sidebar componenti*/
+.bt_siderbar{
+    width: 280px;
+    height: 60px;
+    margin:10px;
+    border-radius: 7px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background: #ffa1a1;
+}
+.bt_siderbar img{
+    width: 50px;
+    height: 50px;
+}
+
+#main_content {
+    width: 80vw;
+    min-height: 100vh;
+    overflow: auto;
+    background: #d5d5d5;
+    flex-grow: 1;
+}
+
+/* Responsive quando lo screen ha una larghezza piccola */
+@media (max-width: 600px) {
+    main {
+        flex-direction: column-reverse;
+    }
+
+    #sidebar,
+    #main_content {
+        width: 100%;
+        height: 50vh;
+        min-width: unset; /*Rimuove qualunque valore forzato o ereditato e usa il default*/
+    }
+    /*facciamo sparire il contentiore con i button*/
+    #sidebar_top{
+        display: none;
+    }
+}
+/*codice del footer*/
+footer{
+    height: 60px;
+    background:#cbcbcb;
+}
